@@ -1,0 +1,14 @@
+.avatar {
+    overflow: hidden;
+}
+
+.fa::before {
+    margin-right: 5px;
+}
+
+.bg-thuc-main {
+    background-color: #1c77b2;
+}
+.bg-thuc-main-light {
+    background-color: #f4faff;
+}
