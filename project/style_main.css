@@ -1,6 +1,9 @@
 :root {
     --main-color: #b2dd4c;
 }
+nav {
+    font-size: 1.2rem;
+}
 nav li:not(.icon) {
     width: 150px;
     text-align: center;
@@ -25,10 +28,11 @@ nav li:not(.icon) {
 }
 .btn-main {
     color: #727272;
+    border: 1px solid;
 }
 
 .header-title {
-    height: 100px;
+    height: 150px;
     background-color: #f6f6f6;
     margin-bottom: 30px;
     display: flex;
@@ -71,7 +75,9 @@ a:hover{
 .page-item:hover a {
     color: var(--main-color);
 }
-
+.single-product {
+    margin-bottom: 30px;
+}
 .single-product div{
     overflow: hidden;
 }
@@ -84,15 +90,37 @@ div.single-product:hover img{
     transform: scale(1.1);
 }
 
-.btn-main{
-    border: 1px solid;
-}
 
 img {
     width: 100%;
     height: auto;
 }
 
+.cart-icon {
+    position: relative;
+}
+.cart-count {
+    position: absolute;
+    background-color: var(--main-color);
+    color: white;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    border-radius: 5px;
+    text-align: center;
+    top: -13px;
+    right: -17px;
+}
+.total-cart {
+    width: 200px;
+    color: var(--main-color);
+}
+.form-cart>input{
+    display: inline;
+    color: #a4a4a4;
+    border: 1px solid;
+}
 .cart-img {
     width: 80px;
     height: 80px;
@@ -164,6 +192,61 @@ ul {
 #map {
     height: 400px;  /* The height is 400 pixels */
     width: 100%;  /* The width is the width of the web page */
+}
+
+.card-title {
+    text-align: justify;
+    height: 2rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.info-sp {
+    height: 3rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.card-body>div {
+    width: 100%;
+}
+.card-text {
+    opacity: 0.5;
+}
+
+.out-of-stock-button {
+    position: absolute;
+    width: 72px;
+    height: 72px;
+    text-align: center;
+    background-color: #242a36;
+    color: #fff;
+    z-index: 100;
+    border-radius: 0 0 3px 0;
+    font-weight: 700;
+    display: none;
+    font-size: 13px;
+    line-height: 15px;
+    vertical-align: middle;
+    padding-top: 18px;
+}
+
+.out-of-stock .out-of-stock-button {
+    display: table;
+}
+
+.out-of-stock .card-body>div>a:first-child {
+    display: none;
+}
+.out-of-stock .card-body>div {
+    justify-content: center!important;
+}
+.out-of-stock .card-body>div>a{
+    width: 100%;
+}
+
+.quantity-plus, .quantity-minus {
+    cursor: pointer;
 }
 
 /*footer*/
