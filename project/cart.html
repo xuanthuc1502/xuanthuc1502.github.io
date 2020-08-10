@@ -14,29 +14,32 @@
     </head>
     <body>
         <header>
-            <nav class="navbar navbar-expand d-flex py-3">
+            <nav class="navbar navbar-expand-lg d-flex py-3">
                 <a class="navbar-brand" href="#">Logo</a>
-                <div class="p-2 ml-auto">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsenav">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="p-2 ml-auto collapse navbar-collapse flex-row-reverse" id="collapsenav">
                   <ul class="navbar-nav navlist">
                     <li class="nav-item">
-                      <a class="nav-link main-hover" href="index.html">Home</a>
+                      <a class="nav-link main-hover menu-active pl-3" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link main-hover" href="shop.html">Shop</a>
+                      <a class="nav-link main-hover pl-3" href="shop.html">Shop</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link main-hover" href="detail.html">Detail</a>
+                      <a class="nav-link main-hover pl-3" href="detail.html">Detail</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link main-hover" href="about.html">About</a>
+                      <a class="nav-link main-hover pl-3" href="about.html">About</a>
                     </li>
                     <li class="nav-item icon">
-                      <a class="nav-link icon-hover" href="cart.html"><span class="fa fa-shopping-cart cart-icon">
+                      <a class="nav-link icon-hover pl-3" href="cart.html"><span class="fa fa-shopping-cart cart-icon">
                           <span class="cart-count">3</span>
                       </span></a>
                     </li>
                     <li class="nav-item icon">
-                      <a class="nav-link icon-hover" href="#"><span class="fa fa-search"></span></a>
+                      <a class="nav-link icon-hover pl-3" href="#"><span class="fa fa-search"></span></a>
                     </li>
                   </ul>
                 </div>
