@@ -44,6 +44,9 @@ nav {
     overflow: hidden;
     height: 500px;
 }
+.my-slider {
+    display: none;
+}
 
 .carousel-info {
     position: absolute;
