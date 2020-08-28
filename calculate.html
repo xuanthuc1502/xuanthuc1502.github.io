@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <meta name="author" content="Thuc Nguyen">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="cal.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="row d-flex justify-content-center mt-5">
+                <div class="col-4 calculate">
+                    <div class="row">
+                        <div class="col-12"><div class="monitor d-flex flex-column justify-content-end">
+                            <div id="formula"></div>
+                            <div id="result">0</div>
+                        </div></div>
+                    </div>
+                    <div class="row button">
+                        <div class="col-12 d-flex flex-nowrap justify-content-between">
+                            <div class="btn btn-light btn-func">M-</div>
+                            <div class="btn btn-light btn-func">M+</div>
+                            <div class="btn btn-light btn-func"> % </div>
+                            <div class="btn btn-light btn-func">AC</div>
+                        </div>
+                        <div class="col-12 d-flex flex-nowrap justify-content-between">
+                            <div class="btn btn-light ">7</div>
+                            <div class="btn btn-light ">8</div>
+                            <div class="btn btn-light ">9</div>
+                            <div class="btn btn-light btn-func" id="divi"> / </div>
+                        </div>
+                        <div class="col-12 d-flex flex-nowrap justify-content-between">
+                            <div class="btn btn-light ">4</div>
+                            <div class="btn btn-light ">5</div>
+                            <div class="btn btn-light ">6</div>
+                            <div class="btn btn-light btn-func" id="mul"> x </div>
+                        </div>
+                        <div class="col-12 d-flex flex-nowrap justify-content-between">
+                            <div class="btn btn-light ">1</div>
+                            <div class="btn btn-light ">2</div>
+                            <div class="btn btn-light ">3</div>
+                            <div class="btn btn-light btn-func" id="sub"> - </div>
+                        </div>
+                        <div class="col-12 d-flex flex-nowrap justify-content-between">
+                            <div class="btn btn-light ">0</div>
+                            <div class="btn btn-light ">.</div>
+                            <div class="btn btn-light " id="equal"> =</div>
+                            <div class="btn btn-light btn-func" id="add"> + </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="cal_func.js"></script>
+    </body>
+</html>

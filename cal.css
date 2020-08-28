@@ -1,0 +1,36 @@
+.button .btn {
+    margin: 5px 0;
+    width: 82px;
+    border: 1px solid gray;
+}
+
+.button .btn.btn-func {
+    background-color: rgb(206, 206, 206);
+}
+.button .btn.btn-func:hover {
+    background-color: rgb(236, 236, 236);
+}
+.monitor {
+    border: 1px solid gray;
+    height: 65px;
+    border-radius: 5px;
+    padding-right: 5px;
+    margin-bottom: 5px;
+}
+
+.monitor div {
+    text-align: right;
+}
+#result {
+    font-size: 150%;
+    transition: 0.4s;
+}
+#formula {
+    color: gray;
+}
+
+.calculate {
+    border:1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+}
